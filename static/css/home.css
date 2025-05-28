@@ -1,0 +1,22 @@
+html{
+    background-color: #303033;
+}
+header {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303033;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3); /* X, Y, blur, spread, цвет */
+}
+.main-title{
+     color:whitesmoke;
+    margin-right: 450px;
+}
+.balance{
+    color:whitesmoke;
+    font-size: 20px;
+}
