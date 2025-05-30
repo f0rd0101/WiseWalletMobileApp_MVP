@@ -1,9 +1,15 @@
 html{
     background-color: #303033;
-}
-header {
     font-family: 'JetBrains Mono', monospace;
 }
+p{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+
+/*HEADER SECTION*/
 
 .header-section{
     display: flex;
@@ -12,11 +18,69 @@ header {
     background-color: #303033;
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3); /* X, Y, blur, spread, цвет */
 }
-.main-title{
+.greeting-title{
      color:whitesmoke;
-    margin-right: 450px;
+    margin-right: 415px;
 }
 .balance{
     color:whitesmoke;
     font-size: 20px;
 }
+
+/*HERO SECTION*/
+.hero-section{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-title{
+    color:whitesmoke;
+    font-size: 40px;
+    margin: 0;
+}
+.hero-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* расстояние между квадратами */
+    justify-content: center; /* или flex-start, если нужно прижать влево */
+    padding: 20px;
+
+}
+
+.hero-li {
+    width: calc(50% - 10px); /* два квадрата в строку с учётом gap */
+    aspect-ratio: 1 / 1; /* делает блок квадратным */
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+background: linear-gradient(135deg, #a8d9a5, #4bad4f);
+    flex-direction: column;}
+
+
+.undertext-hero {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
