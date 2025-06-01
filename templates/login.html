@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="login-section">
+    <div class="login-box">
+           <h1 class="login-h1">Welcome <br> to Wise Wallet</h1>
+        <img src="{% static 'icons/login-cat.png' %}" alt="" width="250px" height="250px">
+    </div>
+ 
+    <form class="modal-form">
+          <div class="modal-div">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="input-wrap">
+              <input
+                id="user-name"
+                type="text"
+                name="user-name"
+                class="modal-input"
+              />
+
+            </div>
+               <div class="modal-div">
+            <label class="modal-label" for="user-name">Email:</label>
+            <div class="input-wrap">
+              <input
+                id="user-name"
+                type="text"
+                name="user-name"
+                class="modal-input"
+              />
+
+            </div>
+          </div>
+          <div class="modal-div">
+            <label class="modal-label" for="user-phone">Password</label>
+            <div class="input-wrap">
+              <input
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+              />
+
+            </div>
+               <div class="modal-div">
+            <label class="modal-label" for="user-name">Repeat Password</label>
+            <div class="input-wrap">
+              <input
+                id="user-name"
+                type="text"
+                name="user-name"
+                class="modal-input"
+              />
+
+            </div>
+          </div>
+
+          <div class="checkbox-div">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="check-text" for="user-privacy">
+
+              I accept the terms and conditions of the
+              <a href="" target="_blank" class="check-link"> Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-form-btn">Register</button>
+        </form>
+</section>
+</body>
+</html>

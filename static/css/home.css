@@ -69,6 +69,34 @@ background: linear-gradient(135deg, #a8d9a5, #4bad4f);
     font-size: 16px;
 }
 
+/*FOOTER SECTION*/
+.footer-list{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+.footer-li{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding-top: 5px;
+
+
+}
+.button_footer{
+    margin-top: 15px;
+    width: 250px;
+    height:  45px;
+    border-style: none;
+    border-radius: 4px;
+  background-color: #4bad4f;
+    font-size: 17px;
+}
+
 
 
 
