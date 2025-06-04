@@ -32,10 +32,11 @@
 <section class="footer-section">
 <footer>
     <ul class="footer-list">
-        <li class="footer-li" onclick="location.href={% url 'home' %}">
+
+        <li class="footer-li" onclick="location.href='{% url 'home' %}'">
 
             <img src="{% static 'icons/profile.png' %}" alt="" width="50" height="50"   >
-            <button type="button" class="button_footer">Головна</button></li>
+            <button type="button" class="button_footer">Головна</button></l>
         <li class="footer-li"  onclick="location.href={% url 'market' %}" >
              <img src="{% static 'icons/market.png' %}" alt="" width="50" height="50"   >
 
