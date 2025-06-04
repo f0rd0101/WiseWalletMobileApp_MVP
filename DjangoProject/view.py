@@ -5,3 +5,8 @@ def main_view(request):
 
 def login_page(request):
     return render(request, 'login.html')
+
+def market_page(request):
+    return render(request, 'market.html')
+def settings_page(request):
+    return render(request, 'settings.html')

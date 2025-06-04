@@ -48,13 +48,15 @@
 <section class="footer-section">
 <footer>
     <ul class="footer-list">
-        <li class="footer-li">
+        <li class="footer-li" onclick="location.href={% url 'home' %}">
+
             <img src="{% static 'icons/profile.png' %}" alt="" width="50" height="50"   >
             <button type="button" class="button_footer">Головна</button></li>
-        <li class="footer-li">
+        <li class="footer-li"  onclick="location.href={% url 'market' %}" >
              <img src="{% static 'icons/market.png' %}" alt="" width="50" height="50"   >
+
             <button type="button" class="button_footer">Ринок</button></li>
-        <li class="footer-li" >
+        <li class="footer-li"  onclick="location.href={% url 'settings' %}">
              <img src="{% static 'icons/settings.png' %}" alt="" width="50" height="50"   >
             <button type="button" class="button_footer">Налаштування</button></li>
     </ul>

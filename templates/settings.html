@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{% static 'css/settings.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 class="h2_title">Налаштування</h2>
+<ul class="ul_settings">
+    <li class="li_settings">
+        <img src="{% static 'icons/friend.png' %}" alt="" width="50px" height="50px">
+        <p class="p_settings">Запросити друга</p>
+    </li>
+    <li class="li_settings">
+    <img src="{% static 'icons/change.png' %}" alt="" width="50px" height="50px">
+        <p class="p_settings">Змінити тему (Доступно у преміум)</p>
+    </li>
+    <li class="li_settings">
+         <img src="{% static 'icons/support.png' %}" alt="" width="50px" height="50px">
+        <p class="p_settings">Зв'язатися з нами</p>
+    </li>
+    <li class="li_settings">
+          <img src="{% static 'icons/vip.png' %}" alt="" width="50px" height="50px">
+        <p class="p_settings">Придбати преміум</p>
+    </li>
+</ul>
+<section class="footer-section">
+<footer>
+    <ul class="footer-list">
+        <li class="footer-li" onclick="location.href={% url 'home' %}">
+
+            <img src="{% static 'icons/profile.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Головна</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'market' %}" >
+             <img src="{% static 'icons/market.png' %}" alt="" width="50" height="50"   >
+
+            <button type="button" class="button_footer">Ринок</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'settings' %}">
+             <img src="{% static 'icons/settings.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Налаштування</button></li>
+    </ul>
+</footer>
+</section>
+</body>
+</html>

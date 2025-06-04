@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'css/market.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Market</title>
+</head>
+<body>
+<h2 class="h2_title">Stock</h2>
+<ul class="market_ul">
+    <li class="market_li">
+         <img src="{% static 'icons/stock.jpg' %}" alt="" width="400" height="400">
+    </li>
+    <li class="market_li">
+    <img src="{%  static 'icons/stock_2.jpg' %}" alt="" width="400" height="400">
+    </li>
+</ul>
+<h2 class="h2_title">Crypto</h2>
+<ul class="market_ul market_ul_2">
+    <li class="market_li">
+         <img src="{% static 'icons/crypto.png' %}" alt="" width="500" height="500">
+    </li>
+    <li class="market_li">
+    <img src="{%  static 'icons/crypto_2.png' %}" alt="" width="500" height="500">
+    </li>
+</ul>
+<p class="advice">Нічого не розумієш? <br>Я можу тобі допомогти</p>
+<img src="{% static 'icons/cat_png.png' %}" alt="" width="100" height="100">
+
+<section class="footer-section">
+<footer>
+    <ul class="footer-list">
+        <li class="footer-li" onclick="location.href={% url 'home' %}">
+
+            <img src="{% static 'icons/profile.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Головна</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'market' %}" >
+             <img src="{% static 'icons/market.png' %}" alt="" width="50" height="50"   >
+
+            <button type="button" class="button_footer">Ринок</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'settings' %}">
+             <img src="{% static 'icons/settings.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Налаштування</button></li>
+    </ul>
+</footer>
+</section>
+
+
+
+
+</body>
+</html>

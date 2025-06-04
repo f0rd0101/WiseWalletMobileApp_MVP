@@ -1,0 +1,63 @@
+body{
+    background-color: #303033;
+    font-family: 'JetBrains Mono', monospace;
+}
+.h2_title{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.market_ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items:  center;
+}
+.market_li{
+    list-style-type: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.market_ul_2{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.advice{
+    background-color: white;
+    border:  2px solid black;
+    width: fit-content;
+    height: 40px;
+    border-radius: 4px;
+    padding: 2px;
+}
+/*FOOTER SECTION*/
+.footer-list{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+.footer-li{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding-top: 5px;
+
+
+}
+.button_footer{
+    margin-top: 15px;
+    width: 250px;
+    height:  45px;
+    border-style: none;
+    border-radius: 4px;
+  background-color: #4bad4f;
+    font-size: 17px;
+}
+
