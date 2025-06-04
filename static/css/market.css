@@ -22,7 +22,6 @@ body{
 }
 .market_ul_2{
     display:  flex;
-    flex-direction: column;
     justify-content: center;
 }
 .advice{
@@ -39,7 +38,7 @@ body{
     list-style: none;
     gap: 60px;
     margin-bottom: 0;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .footer-li{
     display:  flex;

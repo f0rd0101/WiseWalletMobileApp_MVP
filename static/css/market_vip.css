@@ -3,30 +3,40 @@ body{
     font-family: 'JetBrains Mono', monospace;
 }
 .h2_title{
-    padding-top: 250px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     color: white;
     align-items: center;
 }
-.ul_settings{
-    list-style: none;
+.market_ul{
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
-  align-items: center;
-.p_settings{
-    color: white;
+    justify-content: center;
+    gap: 10px;
+    align-items:  center;
 }
+.market_li{
+    list-style-type: none;
+  box-shadow:
+  rgba(212, 175, 55, 0.25) 0px 54px 55px,
+  rgba(212, 175, 55, 0.12) 0px -12px 30px,
+  rgba(212, 175, 55, 0.12) 0px 4px 6px,
+  rgba(212, 175, 55, 0.17) 0px 12px 13px,
+  rgba(212, 175, 55, 0.09) 0px -3px 5px;
 
 }
-.li_settings{
- display: flex;
-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    width: 400px;
-    height: 100px;
+.market_ul_2{
+    display:  flex;
+    justify-content: center;
+}
+.advice{
+    background-color: white;
+    border:  2px solid black;
+    width: fit-content;
+    height: 40px;
     border-radius: 4px;
-    align-items: center;
-    gap: 5px;
+    padding: 2px;
 }
 /*FOOTER SECTION*/
 .footer-list{
@@ -34,7 +44,7 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     list-style: none;
     gap: 60px;
     margin-bottom: 0;
-    margin-top: 400px;
+    margin-top: 20px;
 }
 .footer-li{
     display:  flex;
@@ -52,7 +62,7 @@ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     height:  45px;
     border-style: none;
     border-radius: 4px;
-  background-color: #4bad4f;
+  background-color: #d4af37;
     font-size: 17px;
 }
 

@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="{% static 'css/home_vip.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+</head>
+<header>
+ <section class="header-section">
+     <h2 class="greeting-title">Вітаємо,Нік</h2>
+     <p class="balance">Ваш баланс: 100.00</p>
+     <img src="{% static 'icons/dollar(1).png' %}" alt="dollar" width = "30" height="30" class="menu-icon">
+ </section>
+</header>
+<body>
+ <section class="hero-section">
+     <h2 class="hero-title">Яким чином проведете <br>сьогоднішній день, пане?💰</h2>
+     <ul class="hero-list">
+         <li class="hero-li">
+             <img src="{% static 'icons/pig_money.png' %}" alt="" width="150" height="150">
+             <h3>Планування бюджету</h3> <br>
+             <p class="undertext-hero">Фінансовий спокій починається з одного простого плану</p>
+
+         </li>
+         <li class="hero-li">
+             <img src="{% static 'icons/money_analysis.png' %}" alt=""  width="150" height="150">
+             <h3>Детальний аналіз витрат</h3>
+             <p class="undertext-hero">Ваші гроші теж люблять увагу — і дякують за неї стабільністю</p>
+         </li>
+
+         <li class="hero-li">
+             <img src="{% static 'icons/achieve.png' %}" alt="" width="200" height="150">
+             <h3>Ваші маленькі перемоги</h3>
+             <p class="undertext-hero">З маленьких перемог починається велика впевненість</p>
+         </li>
+         <li class="hero-li">
+             <img src="{% static 'icons/cat.png' %}" alt="" width="150" height="150">
+             <h3>Ваш персональник котик</h3>
+             <p class="undertext-hero">Ваш маленький котик чекає на вас — наводьте фінансовий мур-мур-порядок разом із ним! </p>
+         </li>
+     </ul>
+
+ </section>
+<section class="footer-section">
+<footer>
+    <ul class="footer-list">
+        <li class="footer-li" onclick="location.href={% url 'home' %}">
+
+            <img src="{% static 'icons/user.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Головна</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'market' %}" >
+             <img src="{% static 'icons/market.png' %}" alt="" width="50" height="50"   >
+
+            <button type="button" class="button_footer">Ринок</button></li>
+        <li class="footer-li"  onclick="location.href={% url 'settings' %}">
+             <img src="{% static 'icons/set_gold.png' %}" alt="" width="50" height="50"   >
+            <button type="button" class="button_footer">Налаштування</button></li>
+    </ul>
+</footer>
+</section>
+
+</body>
+</html>
